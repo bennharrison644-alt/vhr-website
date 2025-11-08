@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Veterans Humanitarian Response (VHR)</title>
+  <meta name="description" content="Veterans Humanitarian Response — a rapid-response volunteer team of veterans providing medical, logistics and communications support." />
+  <style>
+    :root{--bg:#0f1724;--card:#0b1220;--accent:#06b6d4;--muted:#94a3b8;--glass:rgba(255,255,255,0.03)}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',Arial;color:#e6eef6;background:linear-gradient(180deg,#071021 0%,#071827 100%);-webkit-font-smoothing:antialiased}
+    .container{max-width:1100px;margin:0 auto;padding:28px}
+    header{display:flex;align-items:center;justify-content:space-between;padding:12px 0}
+    .brand{display:flex;align-items:center;gap:12px}
+    .logo{width:52px;height:52px;border-radius:10px;background:linear-gradient(135deg,var(--accent),#0ea5a6);display:flex;align-items:center;justify-content:center;color:#052025;font-weight:700;font-size:18px}
+    nav a{color:var(--muted);text-decoration:none;margin-left:18px;font-weight:600}
+    nav a:hover{color:#fff}
+    .hero{display:grid;grid-template-columns:1fr 420px;gap:28px;align-items:center;margin-top:18px}
+    .card{background:var(--card);padding:22px;border-radius:14px;box-shadow:0 6px 30px rgba(2,6,23,0.6);border:1px solid rgba(255,255,255,0.03)}
+    h1{margin:0;font-size:28px}
+    p.lead{color:var(--muted);margin-top:10px}
+    .cta{margin-top:16px;display:flex;gap:10px}
+    .btn{background:var(--accent);color:#022;display:inline-block;padding:10px 14px;border-radius:10px;text-decoration:none;font-weight:700}
+    .btn.alt{background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--muted)}
+    .stats{display:flex;gap:10px;margin-top:16px}
+    .stat{background:var(--glass);padding:10px;border-radius:10px;color:var(--muted);font-weight:700}
+    .right-hero .small{font-size:13px;color:var(--muted)}
+    section{margin-top:26px}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .about-list{list-style:none;padding:0;margin:0;color:var(--muted)}
+    .map-placeholder{height:220px;background:linear-gradient(180deg,rgba(255,255,255,0.02),transparent);display:flex;align-items:center;justify-content:center;border-radius:10px;color:var(--muted)}
+    .team-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+    .footer{margin-top:30px;padding:18px 0;color:var(--muted);font-size:14px;border-top:1px solid rgba(255,255,255,0.02)}
+
+    /* Contact form */
+    form{display:flex;flex-direction:column;gap:10px}
+    input,textarea,select{background:transparent;border:1px solid rgba(255,255,255,0.06);padding:10px;border-radius:8px;color:#e6eef6;font-size:14px}
+    textarea{min-height:120px;resize:vertical}
+    .muted{color:var(--muted);font-size:13px}
+
+    /* responsive */
+    @media (max-width:900px){.hero{grid-template-columns:1fr;}.grid{grid-template-columns:1fr}.team-grid{grid-template-columns:1fr}} 
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo">VHR</div>
+        <div>
+          <div style="font-weight:800;font-size:16px">Veterans Humanitarian Response</div>
+          <div style="font-size:12px;color:var(--muted)">Veterans in action for humanity</div>
+        </div>
+      </div>
+      <nav aria-label="Main navigation">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#operations">Operations</a>
+        <a href="#team">Team</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main id="home" class="hero">
+      <div class="card">
+        <h1>Rapid-response veteran volunteers — medical, logistics & communications</h1>
+        <p class="lead">We are an 11-person international volunteer team composed of veterans (security, logistics, medical) and communications specialists, deploying rapidly to support humanitarian response in conflict-affected areas.</p>
+        <div class="cta">
+          <a class="btn" href="#contact">Contact our Team</a>
+          <a class="btn alt" href="#operations">Read our Operations Model</a>
+        </div>
+        <div class="stats" aria-hidden>
+          <div class="stat">11 volunteers</div>
+          <div class="stat">Field medical & logistics</div>
+          <div class="stat">Secure comms</div>
+        </div>
+      </div>
+
+      <aside class="card right-hero">
+        <div style="font-weight:800">Current deployment</div>
+        <div class="small muted">Supporting Pirtuni response — ongoing</div>
+        <div style="height:14px"></div>
+        <div class="map-placeholder card">Map placeholder — add embedded map if desired</div>
+        <div style="margin-top:12px;color:var(--muted);font-size:13px">Operational details are kept minimal here for operational security. For secure inquiries use the contact email below or reach out via secure channels.</div>
+      </aside>
+    </main>
+
+    <section id="about" class="card">
+      <h2>About VHR</h2>
+      <p class="muted">Veterans Humanitarian Response (VHR) is a volunteer rapid-response NGO made up of veterans offering emergency medical care, logistics, security coordination, and communications support to communities affected by conflict and crisis.</p>
+      <ul class="about-list" style="margin-top:12px">
+        <li><strong>Mission:</strong> Quickly and responsibly support lifesaving operations where civilian infrastructure and medical access are disrupted.</li>
+        <li><strong>Values:</strong> Integrity • Speed • Coordination • Humanity</li>
+        <li><strong>Composition:</strong> Medical officers, logistics coordinators, security advisors, and communications specialists — 11-person international team.</li>
+      </ul>
+    </section>
+
+    <section id="operations" class="card">
+      <h2>Operations</h2>
+      <p class="muted">Our approach focuses on short-term deployments to stabilise medical needs, establish safe supply lines, and restore communications for local responders. We prioritise working with local partners and adhering to humanitarian principles.</p>
+      <div style="margin-top:12px" class="grid">
+        <div class="card">
+          <h3 style="margin:0">Rapid Deployment</h3>
+          <p class="muted">Pre-packed medical kits, rapid logistics staging, and experienced security oversight.</p>
+        </div>
+        <div class="card">
+          <h3 style="margin:0">Medical Support</h3>
+          <p class="muted">Emergency trauma care, triage, and patient stabilization for referrals to local hospitals.</p>
+        </div>
+        <div class="card">
+          <h3 style="margin:0">Communications & Coordination</h3>
+          <p class="muted">Secure comms, coordination with NGOs and local authorities, and situational reporting.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="team" class="card">
+      <h2>Team</h2>
+      <p class="muted">We keep individual team member details private for safety; below is an overview of the skills represented in VHR.</p>
+      <div class="team-grid" style="margin-top:12px">
+        <div class="card"><strong>Medical</strong><div class="muted">Emergency medicine, trauma care, medevac coordination</div></div>
+        <div class="card"><strong>Logistics</strong><div class="muted">Field supply chains, transport, warehousing</div></div>
+        <div class="card"><strong>Security</strong><div class="muted">Risk assessments, site security planning</div></div>
+        <div class="card"><strong>Communications</strong><div class="muted">Radio & satellite comms, information management</div></div>
+      </div>
+    </section>
+
+    <section id="contact" class="card">
+      <h2>Contact</h2>
+      <p class="muted">For inquiries, offers of support, or media requests please use the secure email below or the encrypted contact method provided in the form.</p>
+
+      <!-- Visible email as requested -->
+      <div style="margin:8px 0;padding:12px;background:rgba(6,182,212,0.06);border-radius:8px">
+        <strong>Email:</strong>
+        <div style="margin-top:6px;font-weight:700;color:#dff8fb">VeteransHumanitairianResponse@proton.me</div>
+        <div class="muted" style="margin-top:6px">This is our primary secure contact address (ProtonMail).</div>
+      </div>
+
+      <div style="margin-top:12px">
+        <form id="contactForm" onsubmit="return handleForm(event)">
+          <label class="muted">Your name</label>
+          <input id="name" name="name" placeholder="Full name" required />
+
+          <label class="muted">Your email</label>
+          <input id="email" name="email" type="email" placeholder="you@domain.com" required />
+
+          <label class="muted">Subject</label>
+          <input id="subject" name="subject" placeholder="Brief subject" required />
+
+          <label class="muted">Message</label>
+          <textarea id="message" name="message" placeholder="Your message (include any secure handling requests)..." required></textarea>
+
+          <div style="display:flex;gap:8px;margin-top:8px">
+            <button type="submit" class="btn">Send message</button>
+            <button type="button" class="btn alt" onclick="openMailClient()">Open in mail client</button>
+          </div>
+          <div id="formNote" class="muted" style="margin-top:8px">Note: This form opens your mail client using a mailto link. For secure / encrypted exchanges, please email <strong>VeteransHumanitairianResponse@proton.me</strong> directly or provide a public PGP key in your message.</div>
+        </form>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap">
+        <div>© <strong>Veterans Humanitarian Response</strong> — Registered volunteers. All rights reserved.</div>
+        <div class="muted">Designed for clarity & operational security.</div>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    function mailToLink(name,email,subject,msg){
+      // Build a safe mailto link; encode components
+      var to = 'VeteransHumanitairianResponse@proton.me';
+      var body = 'From: ' + name + ' <' + email + '>\n\n' + msg;
+      var href = 'mailto:' + encodeURIComponent(to) + '?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+      return href;
+    }
+
+    function handleForm(e){
+      e.preventDefault();
+      var name = document.getElementById('name').value.trim();
+      var email = document.getElementById('email').value.trim();
+      var subject = document.getElementById('subject').value.trim();
+      var message = document.getElementById('message').value.trim();
+      if(!name||!email||!subject||!message){
+        alert('Please complete all fields.');
+        return false;
+      }
+      var href = mailToLink(name,email,subject,message);
+      // Open user's default mail client
+      window.location.href = href;
+      return false;
+    }
+
+    function openMailClient(){
+      var href = 'mailto:VeteransHumanitairianResponse@proton.me';
+      window.location.href = href;
+    }
+  </script>
+</body>
+</html>
